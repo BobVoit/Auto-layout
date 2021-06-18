@@ -1,0 +1,58 @@
+.services {
+    margin-top: 10rem;
+}
+
+.services__title {
+    display: inline-block;
+    position: relative;
+}
+
+.services__head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services__line {
+    display: inline-block;
+    width: 8rem;
+    height: 3px;
+    margin-left: 2rem;
+
+    background-color: $primary;
+
+    transform: translateY(-50%);
+}
+
+.services__body {
+    margin-top: 5rem;
+    display: flex;  
+}
+
+.services__text {
+    width: 50%;
+    margin-right: 9.5rem;
+}
+
+.services__text-block {
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $secondary;
+    }
+
+    p {
+        margin-top: 1.2rem;
+    }
+
+    &--second {
+        margin-top: 6.9rem;
+    }
+}
+
+.services__about {
+    width: 50%;
+}
+
+.services__block-item {
+    margin-bottom: 1.2rem;
+}

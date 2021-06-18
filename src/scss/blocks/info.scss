@@ -1,0 +1,25 @@
+.info {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid $grey;
+
+    color: $black;
+
+    &:hover, &:focus, &:active {
+        padding-right: 7rem;
+    }
+}
+
+.info__number {
+    display: inline-block;
+    color: $grey;
+    margin-right: 4rem;
+
+    transform: rotate(-90deg);
+}
+
+.info__title {
+    color: $black;
+}

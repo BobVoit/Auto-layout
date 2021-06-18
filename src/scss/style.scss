@@ -24,6 +24,8 @@ body {
     font-family: $oswald;
     overflow: auto;
 
+    background-color: $white;
+
     &::before {
         content: "";
         background-color: transparent;
@@ -81,3 +83,5 @@ picture {
 
 @import "./modules/settings";
 @import "./blocks/header";
+@import "./blocks/services";
+@import "./blocks/info";
