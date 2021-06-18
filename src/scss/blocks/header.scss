@@ -1,0 +1,90 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 90rem;
+    background-color: $white;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        opacity: 0.07;
+
+        background: url('../../img/header-bg.webp') 0 0 no-repeat;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70rem;
+
+        background-color: $primary;
+    }
+}
+
+.header__head {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 10rem;
+}
+
+.header__logo {
+    width: 19.7rem;
+    height: 5.3rem;
+}
+
+.header__body {
+    position: relative;
+    z-index: 2;
+    margin-top: 10.5rem;
+}
+
+.header__title {
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.header__info {
+    margin-top: 3rem;
+}
+
+.header__footer {
+    position: relative;
+    z-index: 2;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__social {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+
+.header__social-item {
+    margin-right: 1rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        height: 2.522rem;
+    }
+}
