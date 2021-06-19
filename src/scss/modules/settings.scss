@@ -43,6 +43,10 @@
     &--white {
         color: $white;
     }
+
+    &--grey {
+        color: $grey;
+    }
 }
 
 .btn {
@@ -61,4 +65,15 @@
         background-color: $white;
         color: $secondary;
     }
+}
+
+.line {
+    display: inline-block;
+    width: 8rem;
+    height: 3px;
+    margin-left: 2rem;
+
+    background-color: $primary;
+
+    transform: translateY(-50%);
 }

@@ -1,4 +1,6 @@
 .info {
+    width: 45rem;
+    height: 7.5rem;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
@@ -7,8 +9,15 @@
 
     color: $black;
 
+    transition: all 0.1s linear;
+
     &:hover, &:focus, &:active {
-        padding-right: 7rem;
+        width: 50rem;
+        border: 2px solid $secondary;
+
+        & .info__number, & .info__title {
+            color: $secondary;
+        }
     }
 }
 

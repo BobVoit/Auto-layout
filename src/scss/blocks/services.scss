@@ -13,17 +13,6 @@
     align-items: center;
 }
 
-.services__line {
-    display: inline-block;
-    width: 8rem;
-    height: 3px;
-    margin-left: 2rem;
-
-    background-color: $primary;
-
-    transform: translateY(-50%);
-}
-
 .services__body {
     margin-top: 5rem;
     display: flex;  
@@ -55,4 +44,8 @@
 
 .services__block-item {
     margin-bottom: 1.2rem;
+}
+
+.services__footer {
+    margin-top: 5rem;
 }

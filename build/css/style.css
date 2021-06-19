@@ -267,6 +267,10 @@ picture {
   color: #ffffff;
 }
 
+.text--grey {
+  color: #c4c4c4;
+}
+
 .btn {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
@@ -286,6 +290,17 @@ picture {
 .btn:focus {
   background-color: #ffffff;
   color: #5a0d67;
+}
+
+.line {
+  display: inline-block;
+  width: 8rem;
+  height: 3px;
+  margin-left: 2rem;
+  background-color: #21062A;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header {
@@ -406,17 +421,6 @@ picture {
           align-items: center;
 }
 
-.services__line {
-  display: inline-block;
-  width: 8rem;
-  height: 3px;
-  margin-left: 2rem;
-  background-color: #21062A;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .services__body {
   margin-top: 5rem;
   display: -webkit-box;
@@ -454,7 +458,13 @@ picture {
   margin-bottom: 1.2rem;
 }
 
+.services__footer {
+  margin-top: 5rem;
+}
+
 .info {
+  width: 45rem;
+  height: 7.5rem;
   padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,12 +474,25 @@ picture {
           align-items: center;
   border: 1px solid #c4c4c4;
   color: #2C2B2B;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .info:hover,
 .info:focus,
 .info:active {
-  padding-right: 7rem;
+  width: 50rem;
+  border: 2px solid #5a0d67;
+}
+
+.info:hover .info__number,
+.info:hover .info__title,
+.info:focus .info__number,
+.info:focus .info__title,
+.info:active .info__number,
+.info:active .info__title {
+  color: #5a0d67;
 }
 
 .info__number {
@@ -483,4 +506,53 @@ picture {
 
 .info__title {
   color: #2C2B2B;
+}
+
+.about {
+  margin-top: 10rem;
+}
+
+.about__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__content {
+  width: 100%;
+  margin-left: 9.5rem;
+}
+
+.about__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 18.5rem;
+}
+
+.about-info {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1rem 27rem 4.5rem 18.5rem;
+  background-color: #21062A;
+}
+
+.about-info__item {
+  padding-top: 2.3rem;
+}
+
+.about-info__subtitle {
+  margin-top: 6px;
+}
+
+.about-info__text {
+  margin-top: 7px;
+  line-height: 3rem;
 }
