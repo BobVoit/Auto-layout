@@ -44,6 +44,10 @@
         color: $white;
     }
 
+    &--secondary {
+        color: $secondary;
+    }
+
     &--grey {
         color: $grey;
     }
@@ -76,4 +80,12 @@
     background-color: $primary;
 
     transform: translateY(-50%);
+
+    &--grey {
+        background-color: $grey;
+    }
+
+    &--white {
+        background-color: $white;
+    }
 }

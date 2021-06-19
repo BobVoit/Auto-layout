@@ -48,4 +48,21 @@
 
 .services__footer {
     margin-top: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.services__footer-line {
+    height: 1px;
+
+    margin-left: -8px;
+}
+
+.services__click {
+    @include buttonStyle;
+    display: block;
+    margin-left: 1rem;
+
+    text-transform: uppercase;
+    color: $grey;
 }

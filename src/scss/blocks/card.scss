@@ -1,0 +1,36 @@
+.card {
+    padding: 7px 5px;
+
+    border: 1px solid $grey;
+
+    &.slick-active {
+        // margin: 0 5px;
+
+        // &:first-child {
+        //     margin-left: 0;
+        // }
+
+        // &:last-child {
+        //     margin-left: 0;
+        // }
+    }
+}
+
+.card__image {
+    width: 38rem;
+    height: 25rem;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.card__name {
+    text-align: center;
+    margin-top: 2.3rem;
+    text-transform: uppercase;
+}
+
+.card__saving {
+    text-align: center;
+    margin-top: 0.5rem;
+}

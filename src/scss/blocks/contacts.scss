@@ -1,0 +1,38 @@
+.contacts {
+    margin-top: 10rem;
+}
+
+.contacts__container {
+    display: flex;
+}
+
+.contacts__content {
+    width: 50%;
+    padding-top: 5rem;
+}
+
+.contacts__head {
+    display: flex;
+    align-items: center;
+
+    & .line {
+        margin-left: .5rem;
+    }
+}
+
+.contacts__body {
+    padding-top: 3rem;
+
+    & > * {
+        line-height: 3.8rem;
+    }
+}
+
+.contacts__item {
+    margin-top: 2rem;
+
+    & > * {
+        margin-top: 5px;   
+    }
+}
+

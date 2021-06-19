@@ -1,0 +1,68 @@
+.cars {
+    margin-top: 10rem;
+
+    overflow: hidden;
+}
+
+.cars__head {
+    display: flex;
+    align-items: center;
+}
+
+.cars__content {
+    margin-top: 4.9rem;
+}
+
+.cars__slider {
+    width: 100%;
+    font-size: 0;
+
+
+    & .slick-list {
+        overflow: hidden;
+    }
+
+    & .slick-track{
+        display: flex;
+    }
+}
+
+.cars__slider-dots {
+    margin-top: 5rem;
+
+    & .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li {
+        margin: 0 1rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        button {
+            width: 5rem;
+            height: 1px;
+
+            background-color: $grey;
+
+            font-size: 0;
+
+            transition: height 0.3s ease, background-color 0.3s ease;
+        }
+
+        &.slick-active {
+            button {
+                height: 3px;
+                background-color: $secondary;
+            }
+        }
+    }
+}
